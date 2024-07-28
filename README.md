@@ -1,4 +1,4 @@
-# PowerShell Command Runner CLI
+# Microsoft Activation Tool
 
 This Python CLI tool uses the `curses` library to provide an interactive menu for running a predefined PowerShell command. The command fetches and executes a script from the specified URL using `irm` (Invoke-RestMethod) and `iex` (Invoke-Expression).
 
