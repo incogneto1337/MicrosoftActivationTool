@@ -16,13 +16,17 @@ def display_menu(stdscr):
     menu = ["Run PowerShell Command", "Exit"]
     current_row = 0
 
+    # Set up color pair for highlighting selected menu item
+    curses.start_color()
+    curses.init_pair(1, curses.COLOR_BLACK, curses.COLOR_WHITE)
+
     while True:
         stdscr.clear()
         height, width = stdscr.getmaxyx()
 
         for idx, row in enumerate(menu):
-            x = width//2 - len(row)//2
-            y = height//2 - len(menu)//2 + idx
+            x = width // 2 - len(row) // 2
+            y = height // 2 - len(menu) // 2 + idx
             if idx == current_row:
                 stdscr.attron(curses.color_pair(1))
                 stdscr.addstr(y, x, row)
@@ -51,8 +55,8 @@ def display_menu(stdscr):
             elif current_row == 1:
                 break
 
-def main():
-    curses.wrapper(display_menu)
+def main(stdscr):
+    display_menu(stdscr)
 
 if __name__ == "__main__":
     curses.wrapper(main)
