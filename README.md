@@ -123,4 +123,3 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 ---
 
-Feel free to customize the command or menu options to suit your needs. Happy coding!
