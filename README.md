@@ -24,7 +24,7 @@ This Python CLI tool uses the `curses` library to provide an interactive menu fo
 Run the script using Python:
 
 ```sh
-python your_script_name.py
+python mat.py
 ```
 
 ### Menu Options
